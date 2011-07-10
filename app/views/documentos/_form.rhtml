@@ -1,0 +1,31 @@
+<%= error_messages_for 'documento' %>
+
+<!--[form:documento]-->
+<p><label for="documento_docdescricao">Docdescricao</label><br/>
+<%= text_field 'documento', 'docdescricao'  %></p>
+
+<p><label for="documento_docautor">Docautor</label><br/>
+<%= text_field 'documento', 'docautor'  %></p>
+
+<p><label for="documento_docpalavras_chave">Docpalavras chave</label><br/>
+<%= text_field 'documento', 'docpalavras_chave'  %></p>
+
+<p><label for="documento_docsinopse">Docsinopse</label><br/>
+<%= text_area 'documento', 'docsinopse'  %></p>
+
+<p><label for="documento_docarquivo">Docarquivo</label><br/>
+<%= text_field 'documento', 'docarquivo'  %></p>
+
+<p><label for="documento_tipo_id">Tipo</label><br/>
+<%= select("documento", "tipo_id",  Tipo.find(:all, :order=>"tipodescricao").collect {|p| [ p.tipodescricao, p.id ] }, { :include_blank => false}) %></p>
+
+<p><label for="documento_area_id">Área</label><br/>
+<%= select("documento", "area_id",  Area.find(:all, :order=>"areadescricao").collect {|p| [ p.areadescricao, p.id ] }, { :include_blank => false}) %></p>
+
+<p><label for="documento_created_at">Created at</label><br/>
+<%= datetime_select 'documento', 'created_at'  %></p>
+
+<p><label for="documento_updated_at">Updated at</label><br/>
+<%= datetime_select 'documento', 'updated_at'  %></p>
+<!--[eoform:documento]-->
+

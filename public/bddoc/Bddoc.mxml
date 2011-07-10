@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" xmlns:ns1="br.com.bddoc.*">
+	<mx:Style source="/css/style.css"/>
+	<ns1:Main id="_mainView" width="100%" layout="absolute" height="100%" >
+	</ns1:Main>
+</mx:Application>

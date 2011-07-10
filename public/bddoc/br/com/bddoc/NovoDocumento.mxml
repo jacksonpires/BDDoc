@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" 
+	layout="absolute" width="600" height="400" 
+	horizontalAlign="center" verticalAlign="middle"  
+	showCloseButton="true" 				
+	creationComplete="{init()}"
+	close="{close()}"
+	title="Cadastro de novo documento" fontSize="12" borderAlpha="1"
+	 creationCompleteEffect="{effectShow}" >
+ 
+	<mx:Style source="/css/style.css"/>	
+
+	<mx:Script source="utils/NovoDocumento.as"/>
+
+    <mx:Parallel id="effectShow">
+            <mx:Move id="myMove" xFrom="0" target="{this}"/>
+            <mx:Blur id="blurEffect"  blurXFrom="100" blurXTo="0" blurYFrom="100" blurYTo="0" duration="500"/>
+            <mx:Zoom id="myZoomShow" 
+                zoomHeightFrom="0" zoomWidthFrom="0" 
+                zoomHeightTo="1.0" zoomWidthTo="1.0"/>
+    </mx:Parallel>
+
+    <mx:Parallel id="effectClose" effectEnd="{theEnd()}">
+            <mx:Move id="myMove1" xTo="0" yTo="0" target="{this}" />
+            <mx:Blur id="blurEffect1"  blurXFrom="0" blurXTo="100" blurYFrom="0" blurYTo="100"  duration="500" target="{this}"/>
+            <mx:Zoom id="myZoomShow1"  target="{this}" 
+                zoomHeightFrom="1.0" zoomWidthFrom="1.0" 
+                zoomHeightTo="0" zoomWidthTo="0"/>
+    </mx:Parallel>
+
+
+	<mx:TextInput x="83" y="11" width="487" tabIndex="0" id="_txt_descricao"/>
+	<mx:Label x="10" y="12" text="Descrição"/>
+	<mx:ComboBox x="83" y="70" id="_cmb_area" tabIndex="2" dataProvider="{pesquisaAreaService.lastResult.areas.area}" labelField="areadescricao" ></mx:ComboBox>
+	<mx:HRule y="137" width="99%" horizontalCenter="0"/>
+	<mx:TextArea x="10" y="219" width="560" height="84" tabIndex="7" id="_txt_sinopse"/>
+	<mx:TextInput x="83" y="103" width="207" tabIndex="4" id="_txt_url_arquivo"  backgroundColor="#E9E9E9" editable="false"/>
+	<mx:Button x="298" y="102" width="28" icon="@Embed(source='/assets/file.png')" tabIndex="5" click="{openDialog()}"/>
+	<mx:TextInput x="83" y="40" width="451" tabIndex="1" id="_txt_autor"/>
+	<mx:Label x="10" y="41" text="Autor"/>
+	<mx:Label x="10" y="72" text="Área"/>
+	<mx:Label x="10" y="100" text="Arquivo"/>
+	<mx:ComboBox x="374" y="70" id="_cmb_tipo" tabIndex="3" dataProvider="{pesquisaTipoService.lastResult.tipos.tipo}" labelField="tipodescricao" ></mx:ComboBox>
+	<mx:Label x="335" y="72" text="Tipo"/>
+	<mx:TextInput x="10" y="168" width="524" tabIndex="6" id="_txt_palavras_chave"/>
+	<mx:Label x="10" y="149" text="Palavras-Chave"/>
+	<mx:Label x="10" y="198" text="Sinopse" id="_label_sinopse"/>
+	<mx:ControlBar height="53" x="0" y="317">
+		<mx:ProgressBar id="_progress_bar" width="334" label="Fazendo Upload..." direction="right" mode="manual" maximum="100" minimum="0" visible="false"/>
+		<mx:Spacer width="100%"/>
+		<mx:Button id="_btn_salvar" label="Salvar" icon="@Embed(source='/assets/apply.png')" tabIndex="8" click="cadastrar()"/>
+		<mx:Button id="_btn_cancelar" label="Cancelar" icon="@Embed(source='/assets/cancel.png')" tabIndex="9" click="{close()}"/>
+	</mx:ControlBar>	
+</mx:TitleWindow>

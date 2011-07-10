@@ -1,0 +1,27 @@
+<h1>Listing areas</h1>
+
+<table>
+  <tr>
+  <% for column in Area.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for area in @areas %>
+  <tr>
+  <% for column in Area.content_columns %>
+    <td><%=h area.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => area %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => area %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => area }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @area_pages.current.previous } if @area_pages.current.previous %>
+<%= link_to 'Next page', { :page => @area_pages.current.next } if @area_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New area', :action => 'new' %>

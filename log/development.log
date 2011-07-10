@@ -1,0 +1,1736 @@
+# Logfile created on Wed Sep 12 19:59:08 Hora oficial do Brasil 2007 by logger.rb/1.5.2.7
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2007-09-12 19:59:45) [GET]
+  Session ID: 585d0e5e1d07f1bfd1c9306ec92fbd9a
+  Parameters: {"action"=>"index", "controller"=>"documentos"}
+Rendering  within layouts/documentos
+Rendering documentos/index
+Completed in 0.12500 (8 reqs/sec) | Rendering: 0.12500 (100%) | 200 OK [http://localhost/]
+
+
+Processing DocumentosController#swf (for 127.0.0.1 at 2007-09-12 19:59:56) [GET]
+  Session ID: 585d0e5e1d07f1bfd1c9306ec92fbd9a
+  Parameters: {"action"=>"swf", "controller"=>"documentos"}
+Redirected to http://localhost:3000/swf.html
+Completed in 0.00010 (10000 reqs/sec) | 302 Found [http://localhost/documentos/swf]
+
+
+Processing DocumentosController#pesquisa (for 127.0.0.1 at 2007-09-12 19:59:59) [GET]
+  Session ID: 585d0e5e1d07f1bfd1c9306ec92fbd9a
+  Parameters: {"action"=>"pesquisa", "controller"=>"documentos"}
+
+
+Mysql::Error (#42000Unknown database 'bddoc_development'):
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/vendor/mysql.rb:523:in `read'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/vendor/mysql.rb:153:in `real_connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:389:in `connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:152:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:82:in `mysql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:262:in `connection_without_query_cache='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/query_cache.rb:54:in `connection='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:230:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/associations.rb:1166:in `select_all_rows'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/associations.rb:1023:in `find_with_associations'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/associations.rb:1021:in `find_with_associations'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:996:in `find_every'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:418:in `find'
+    /app/controllers/documentos_controller.rb:90:in `pesquisa'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:113:in `handle_dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:79:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:63:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/webrick.rb:59
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing DocumentosController#pesquisaQtd (for 127.0.0.1 at 2007-09-12 20:00:00) [GET]
+  Session ID: 585d0e5e1d07f1bfd1c9306ec92fbd9a
+  Parameters: {"action"=>"pesquisaQtd", "controller"=>"documentos"}
+
+
+Mysql::Error (#42000Unknown database 'bddoc_development'):
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/vendor/mysql.rb:523:in `read'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/vendor/mysql.rb:153:in `real_connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:389:in `connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:152:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:82:in `mysql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:262:in `connection_without_query_cache='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/query_cache.rb:54:in `connection='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:230:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1139:in `add_limit!'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1101:in `construct_finder_sql'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:997:in `find_every'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:418:in `find'
+    /app/controllers/documentos_controller.rb:81:in `pesquisaQtd'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:113:in `handle_dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:79:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:63:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/webrick.rb:59
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-09-12 20:00:10) [GET]
+  Session ID: 585d0e5e1d07f1bfd1c9306ec92fbd9a
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+
+
+Mysql::Error (#42000Unknown database 'bddoc_development'):
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/vendor/mysql.rb:523:in `read'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/vendor/mysql.rb:153:in `real_connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:389:in `connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:152:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:82:in `mysql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:262:in `connection_without_query_cache='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/query_cache.rb:54:in `connection='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:230:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1139:in `add_limit!'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1101:in `construct_finder_sql'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:997:in `find_every'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:418:in `find'
+    /app/controllers/areas_controller.rb:55:in `pesquisa'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:113:in `handle_dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:79:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:63:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/webrick.rb:59
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-09-12 20:00:10) [GET]
+  Session ID: 585d0e5e1d07f1bfd1c9306ec92fbd9a
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+
+
+Mysql::Error (#42000Unknown database 'bddoc_development'):
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/vendor/mysql.rb:523:in `read'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/vendor/mysql.rb:153:in `real_connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:389:in `connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:152:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:82:in `mysql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:262:in `connection_without_query_cache='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/query_cache.rb:54:in `connection='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:230:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1139:in `add_limit!'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1101:in `construct_finder_sql'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:997:in `find_every'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:418:in `find'
+    /app/controllers/tipos_controller.rb:55:in `pesquisa'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:113:in `handle_dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:79:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:63:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/webrick.rb:59
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-09-12 20:00:17) [GET]
+  Session ID: 585d0e5e1d07f1bfd1c9306ec92fbd9a
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+
+
+Mysql::Error (#42000Unknown database 'bddoc_development'):
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/vendor/mysql.rb:523:in `read'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/vendor/mysql.rb:153:in `real_connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:389:in `connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:152:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:82:in `mysql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:262:in `connection_without_query_cache='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/query_cache.rb:54:in `connection='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:230:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1139:in `add_limit!'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1101:in `construct_finder_sql'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:997:in `find_every'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:418:in `find'
+    /app/controllers/areas_controller.rb:55:in `pesquisa'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:113:in `handle_dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:79:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:63:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/webrick.rb:59
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-09-12 20:00:17) [GET]
+  Session ID: 585d0e5e1d07f1bfd1c9306ec92fbd9a
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+
+
+Mysql::Error (#42000Unknown database 'bddoc_development'):
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/vendor/mysql.rb:523:in `read'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/vendor/mysql.rb:153:in `real_connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:389:in `connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:152:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:82:in `mysql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:262:in `connection_without_query_cache='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/query_cache.rb:54:in `connection='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:230:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1139:in `add_limit!'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1101:in `construct_finder_sql'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:997:in `find_every'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:418:in `find'
+    /app/controllers/tipos_controller.rb:55:in `pesquisa'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:113:in `handle_dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:79:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:63:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/webrick.rb:59
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-09-12 20:00:23) [GET]
+  Session ID: 585d0e5e1d07f1bfd1c9306ec92fbd9a
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+
+
+Mysql::Error (#42000Unknown database 'bddoc_development'):
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/vendor/mysql.rb:523:in `read'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/vendor/mysql.rb:153:in `real_connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:389:in `connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:152:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:82:in `mysql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:262:in `connection_without_query_cache='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/query_cache.rb:54:in `connection='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:230:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1139:in `add_limit!'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1101:in `construct_finder_sql'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:997:in `find_every'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:418:in `find'
+    /app/controllers/areas_controller.rb:55:in `pesquisa'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:113:in `handle_dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:79:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:63:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/webrick.rb:59
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-09-12 20:00:23) [GET]
+  Session ID: 585d0e5e1d07f1bfd1c9306ec92fbd9a
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+
+
+Mysql::Error (#42000Unknown database 'bddoc_development'):
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/vendor/mysql.rb:523:in `read'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/vendor/mysql.rb:153:in `real_connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:389:in `connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:152:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:82:in `mysql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:262:in `connection_without_query_cache='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/query_cache.rb:54:in `connection='
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:230:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1139:in `add_limit!'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1101:in `construct_finder_sql'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:997:in `find_every'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:418:in `find'
+    /app/controllers/tipos_controller.rb:55:in `pesquisa'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:113:in `handle_dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:79:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:63:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/webrick.rb:59
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.078000)[0m   [0;1mCREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.032000)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to Inicial (1)
+  [4;36;1mSQL (0.093000)[0m   [0;1mCREATE TABLE documentos (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `docdescricao` varchar(60) NOT NULL, `docautor` varchar(60) DEFAULT NULL, `docpalavras_chave` varchar(254) NOT NULL, `docsinopse` text DEFAULT NULL, `docarquivo` varchar(60) NOT NULL, `area_id` int(11) NOT NULL, `tipo_id` int(11) NOT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.062000)[0m   [0mCREATE TABLE areas (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `areadescricao` varchar(60) NOT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.078000)[0m   [0;1mCREATE TABLE tipos (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tipodescricao` varchar(60) NOT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.031000)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.015000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW KEYS FROM areas[0m
+  [4;36;1mSQL (0.141000)[0m   [0;1mSHOW FIELDS FROM documentos[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW KEYS FROM documentos[0m
+  [4;36;1mSQL (0.015000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mSQL (0.016000)[0m   [0mSHOW KEYS FROM tipos[0m
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2007-09-15 16:43:32) [GET]
+  Session ID: 8bfb30de44a794d240a5de303652ea9c
+  Parameters: {"action"=>"index", "controller"=>"documentos"}
+Rendering  within layouts/documentos
+Rendering documentos/index
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.01600 (100%) | 200 OK [http://localhost/]
+
+
+Processing DocumentosController#swf (for 127.0.0.1 at 2007-09-15 16:43:38) [GET]
+  Session ID: 8bfb30de44a794d240a5de303652ea9c
+  Parameters: {"action"=>"swf", "controller"=>"documentos"}
+Redirected to http://localhost:3000/swf.html
+Completed in 0.00010 (10000 reqs/sec) | 302 Found [http://localhost/documentos/swf]
+
+
+Processing DocumentosController#pesquisa (for 127.0.0.1 at 2007-09-15 16:43:39) [GET]
+  Session ID: 8bfb30de44a794d240a5de303652ea9c
+  Parameters: {"action"=>"pesquisa", "controller"=>"documentos"}
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.031000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mDocumento Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM documentos[0m
+  [4;35;1mTipo Columns (0.000000)[0m   [0mSHOW FIELDS FROM tipos[0m
+  [4;36;1mArea Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+  [4;35;1mDocumento Load Including Associations (0.032000)[0m   [0mSELECT documentos.`id` AS t0_r0, documentos.`docdescricao` AS t0_r1, documentos.`docautor` AS t0_r2, documentos.`docpalavras_chave` AS t0_r3, documentos.`docsinopse` AS t0_r4, documentos.`docarquivo` AS t0_r5, documentos.`area_id` AS t0_r6, documentos.`tipo_id` AS t0_r7, documentos.`created_at` AS t0_r8, documentos.`updated_at` AS t0_r9, tipos.`id` AS t1_r0, tipos.`tipodescricao` AS t1_r1, tipos.`created_at` AS t1_r2, tipos.`updated_at` AS t1_r3, areas.`id` AS t2_r0, areas.`areadescricao` AS t2_r1, areas.`created_at` AS t2_r2, areas.`updated_at` AS t2_r3 FROM documentos LEFT OUTER JOIN tipos ON tipos.id = documentos.tipo_id LEFT OUTER JOIN areas ON areas.id = documentos.area_id ORDER BY documentos.created_at DESC LIMIT 0, 50[0m
+Completed in 0.45400 (2 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.09400 (20%) | 200 OK [http://localhost/documentos/pesquisa]
+
+
+Processing DocumentosController#pesquisaQtd (for 127.0.0.1 at 2007-09-15 16:43:39) [GET]
+  Session ID: 8bfb30de44a794d240a5de303652ea9c
+  Parameters: {"action"=>"pesquisaQtd", "controller"=>"documentos"}
+  [4;36;1mDocumento Load (0.000000)[0m   [0;1mSELECT * FROM documentos [0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/documentos/pesquisaQtd]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-09-15 16:43:41) [GET]
+  Session ID: 8bfb30de44a794d240a5de303652ea9c
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-09-15 16:43:42) [GET]
+  Session ID: 8bfb30de44a794d240a5de303652ea9c
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;36;1mTipo Load (0.000000)[0m   [0;1mSELECT * FROM tipos ORDER BY tipodescricao[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-09-15 16:43:46) [GET]
+  Session ID: 8bfb30de44a794d240a5de303652ea9c
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-09-15 16:43:46) [GET]
+  Session ID: 8bfb30de44a794d240a5de303652ea9c
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;36;1mTipo Load (0.000000)[0m   [0;1mSELECT * FROM tipos ORDER BY tipodescricao[0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-09-15 16:44:29) [GET]
+  Session ID: 8bfb30de44a794d240a5de303652ea9c
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-09-15 16:44:29) [GET]
+  Session ID: 8bfb30de44a794d240a5de303652ea9c
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;36;1mTipo Load (0.000000)[0m   [0;1mSELECT * FROM tipos ORDER BY tipodescricao[0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-09-15 16:44:33) [GET]
+  Session ID: 8bfb30de44a794d240a5de303652ea9c
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-09-15 16:44:33) [GET]
+  Session ID: 8bfb30de44a794d240a5de303652ea9c
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;36;1mTipo Load (0.000000)[0m   [0;1mSELECT * FROM tipos ORDER BY tipodescricao[0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2007-09-22 16:40:18) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"index", "controller"=>"documentos"}
+Rendering  within layouts/documentos
+Rendering documentos/index
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.03100 (100%) | 200 OK [http://localhost/]
+
+
+Processing DocumentosController#tipos (for 127.0.0.1 at 2007-09-22 16:40:34) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"tipos", "controller"=>"documentos"}
+Redirected to http://localhost:3000/tipos
+Completed in 0.00010 (10000 reqs/sec) | 302 Found [http://localhost/documentos/tipos]
+
+
+Processing TiposController#index (for 127.0.0.1 at 2007-09-22 16:40:34) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"index", "controller"=>"tipos"}
+  [4;36;1mSQL (0.063000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTipo Columns (0.078000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mSQL (0.031000)[0m   [0mSELECT count(*) AS count_all FROM tipos [0m
+  [4;36;1mTipo Load (0.000000)[0m   [0;1mSELECT * FROM tipos LIMIT 0, 10[0m
+Rendering actionlistlayoutfalse within layouts/tipos
+Rendering tipos/list
+Completed in 3.18800 (0 reqs/sec) | Rendering: 0.09400 (2%) | DB: 0.17200 (5%) | 200 OK [http://localhost/tipos]
+
+
+Processing TiposController#new (for 127.0.0.1 at 2007-09-22 16:40:42) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"new", "controller"=>"tipos"}
+  [4;35;1mTipo Columns (0.000000)[0m   [0mSHOW FIELDS FROM tipos[0m
+Rendering  within layouts/tipos
+Rendering tipos/new
+Rendered tipos/_form (0.01600)
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.03100 (65%) | DB: 0.00000 (0%) | 200 OK [http://localhost/tipos/new]
+
+
+Processing TiposController#create (for 127.0.0.1 at 2007-09-22 16:40:50) [POST]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"tipos", "tipo"=>{"updated_at(1i)"=>"2007", "created_at(1i)"=>"2007", "updated_at(2i)"=>"9", "updated_at(3i)"=>"22", "created_at(2i)"=>"9", "updated_at(4i)"=>"16", "created_at(3i)"=>"22", "tipodescricao"=>"MONOGRAFIA", "created_at(4i)"=>"16", "updated_at(5i)"=>"40", "created_at(5i)"=>"40"}}
+  [4;36;1mTipo Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mSQL (0.015000)[0m   [0mBEGIN[0m
+  [4;36;1mTipo Load (0.016000)[0m   [0;1mSELECT * FROM tipos WHERE (tipos.tipodescricao = 'MONOGRAFIA') LIMIT 1[0m
+  [4;35;1mSQL (0.016000)[0m   [0mINSERT INTO tipos (`updated_at`, `tipodescricao`, `created_at`) VALUES('2007-09-22 16:40:50', 'MONOGRAFIA', '2007-09-22 16:40:00')[0m
+  [4;36;1mSQL (0.093000)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/tipos/list
+Completed in 0.15600 (6 reqs/sec) | DB: 0.14000 (89%) | 302 Found [http://localhost/tipos/create]
+
+
+Processing TiposController#list (for 127.0.0.1 at 2007-09-22 16:40:51) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"list", "controller"=>"tipos"}
+  [4;35;1mTipo Columns (0.000000)[0m   [0mSHOW FIELDS FROM tipos[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM tipos [0m
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos LIMIT 0, 10[0m
+Rendering  within layouts/tipos
+Rendering tipos/list
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/tipos/list]
+
+
+Processing TiposController#new (for 127.0.0.1 at 2007-09-22 16:40:52) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"new", "controller"=>"tipos"}
+  [4;36;1mTipo Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+Rendering  within layouts/tipos
+Rendering tipos/new
+Rendered tipos/_form (0.00000)
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.03100 (49%) | DB: 0.01600 (25%) | 200 OK [http://localhost/tipos/new]
+
+
+Processing TiposController#create (for 127.0.0.1 at 2007-09-22 16:40:58) [POST]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"tipos", "tipo"=>{"updated_at(1i)"=>"2007", "created_at(1i)"=>"2007", "updated_at(2i)"=>"9", "updated_at(3i)"=>"22", "created_at(2i)"=>"9", "updated_at(4i)"=>"16", "created_at(3i)"=>"22", "tipodescricao"=>"TRABALHO DE CLASSE", "created_at(4i)"=>"16", "updated_at(5i)"=>"40", "created_at(5i)"=>"40"}}
+  [4;35;1mTipo Columns (0.000000)[0m   [0mSHOW FIELDS FROM tipos[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos WHERE (tipos.tipodescricao = 'TRABALHO DE CLASSE') LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mINSERT INTO tipos (`updated_at`, `tipodescricao`, `created_at`) VALUES('2007-09-22 16:40:58', 'TRABALHO DE CLASSE', '2007-09-22 16:40:00')[0m
+  [4;35;1mSQL (0.031000)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/tipos/list
+Completed in 0.07800 (12 reqs/sec) | DB: 0.03100 (39%) | 302 Found [http://localhost/tipos/create]
+
+
+Processing TiposController#list (for 127.0.0.1 at 2007-09-22 16:40:58) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"list", "controller"=>"tipos"}
+  [4;36;1mTipo Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mSQL (0.015000)[0m   [0mSELECT count(*) AS count_all FROM tipos [0m
+  [4;36;1mTipo Load (0.000000)[0m   [0;1mSELECT * FROM tipos LIMIT 0, 10[0m
+Rendering  within layouts/tipos
+Rendering tipos/list
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (48%) | 200 OK [http://localhost/tipos/list]
+
+
+Processing TiposController#new (for 127.0.0.1 at 2007-09-22 16:41:25) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"new", "controller"=>"tipos"}
+  [4;35;1mTipo Columns (0.015000)[0m   [0mSHOW FIELDS FROM tipos[0m
+Rendering  within layouts/tipos
+Rendering tipos/new
+Rendered tipos/_form (0.01600)
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.03200 (50%) | DB: 0.01500 (23%) | 200 OK [http://localhost/tipos/new]
+
+
+Processing TiposController#create (for 127.0.0.1 at 2007-09-22 16:41:34) [POST]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"tipos", "tipo"=>{"updated_at(1i)"=>"2007", "created_at(1i)"=>"2007", "updated_at(2i)"=>"9", "updated_at(3i)"=>"22", "created_at(2i)"=>"9", "updated_at(4i)"=>"16", "created_at(3i)"=>"22", "tipodescricao"=>"TCC", "created_at(4i)"=>"16", "updated_at(5i)"=>"41", "created_at(5i)"=>"41"}}
+  [4;36;1mTipo Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mTipo Load (0.000000)[0m   [0;1mSELECT * FROM tipos WHERE (tipos.tipodescricao = 'TCC') LIMIT 1[0m
+  [4;35;1mSQL (0.016000)[0m   [0mINSERT INTO tipos (`updated_at`, `tipodescricao`, `created_at`) VALUES('2007-09-22 16:41:34', 'TCC', '2007-09-22 16:41:00')[0m
+  [4;36;1mSQL (0.031000)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/tipos/list
+Completed in 0.06200 (16 reqs/sec) | DB: 0.04700 (75%) | 302 Found [http://localhost/tipos/create]
+
+
+Processing TiposController#list (for 127.0.0.1 at 2007-09-22 16:41:34) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"list", "controller"=>"tipos"}
+  [4;35;1mTipo Columns (0.000000)[0m   [0mSHOW FIELDS FROM tipos[0m
+  [4;36;1mSQL (0.015000)[0m   [0;1mSELECT count(*) AS count_all FROM tipos [0m
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos LIMIT 0, 10[0m
+Rendering  within layouts/tipos
+Rendering tipos/list
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (48%) | 200 OK [http://localhost/tipos/list]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2007-09-22 16:41:40) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"index", "controller"=>"documentos"}
+Rendering  within layouts/documentos
+Rendering documentos/index
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.01600 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing DocumentosController#areas (for 127.0.0.1 at 2007-09-22 16:41:43) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"areas", "controller"=>"documentos"}
+Redirected to http://localhost:3000/areas
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/documentos/areas]
+
+
+Processing AreasController#index (for 127.0.0.1 at 2007-09-22 16:41:44) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"index", "controller"=>"areas"}
+  [4;36;1mArea Columns (0.031000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM areas [0m
+  [4;36;1mArea Load (0.016000)[0m   [0;1mSELECT * FROM areas LIMIT 0, 10[0m
+Rendering actionlistlayoutfalse within layouts/areas
+Rendering areas/list
+Completed in 0.12500 (8 reqs/sec) | Rendering: 0.06200 (49%) | DB: 0.04700 (37%) | 200 OK [http://localhost/areas]
+
+
+Processing AreasController#new (for 127.0.0.1 at 2007-09-22 16:41:45) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"new", "controller"=>"areas"}
+  [4;35;1mArea Columns (0.000000)[0m   [0mSHOW FIELDS FROM areas[0m
+Rendering  within layouts/areas
+Rendering areas/new
+Rendered areas/_form (0.09300)
+Completed in 0.14000 (7 reqs/sec) | Rendering: 0.10900 (77%) | DB: 0.00000 (0%) | 200 OK [http://localhost/areas/new]
+
+
+Processing AreasController#create (for 127.0.0.1 at 2007-09-22 16:41:57) [POST]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"commit"=>"Create", "action"=>"create", "area"=>{"updated_at(1i)"=>"2007", "updated_at(2i)"=>"9", "created_at(1i)"=>"2007", "updated_at(3i)"=>"22", "created_at(2i)"=>"9", "updated_at(4i)"=>"16", "created_at(3i)"=>"22", "created_at(4i)"=>"16", "updated_at(5i)"=>"41", "created_at(5i)"=>"41", "areadescricao"=>"SISTEMAS DE INFORMAÇÃO"}, "controller"=>"areas"}
+  [4;36;1mArea Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mArea Load (0.016000)[0m   [0;1mSELECT * FROM areas WHERE (areas.areadescricao = 'SISTEMAS DE INFORMAÇÃO') LIMIT 1[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO areas (`updated_at`, `areadescricao`, `created_at`) VALUES('2007-09-22 16:41:57', 'SISTEMAS DE INFORMAÇÃO', '2007-09-22 16:41:00')[0m
+  [4;36;1mSQL (0.047000)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/areas/list
+Completed in 0.07800 (12 reqs/sec) | DB: 0.06300 (80%) | 302 Found [http://localhost/areas/create]
+
+
+Processing AreasController#list (for 127.0.0.1 at 2007-09-22 16:41:58) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"list", "controller"=>"areas"}
+  [4;35;1mArea Columns (0.000000)[0m   [0mSHOW FIELDS FROM areas[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM areas [0m
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas LIMIT 0, 10[0m
+Rendering  within layouts/areas
+Rendering areas/list
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/areas/list]
+
+
+Processing AreasController#new (for 127.0.0.1 at 2007-09-22 16:42:00) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"new", "controller"=>"areas"}
+  [4;36;1mArea Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+Rendering  within layouts/areas
+Rendering areas/new
+Rendered areas/_form (0.00000)
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01500 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/areas/new]
+
+
+Processing AreasController#create (for 127.0.0.1 at 2007-09-22 16:42:06) [POST]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"commit"=>"Create", "action"=>"create", "area"=>{"updated_at(1i)"=>"2007", "updated_at(2i)"=>"9", "created_at(1i)"=>"2007", "updated_at(3i)"=>"22", "created_at(2i)"=>"9", "updated_at(4i)"=>"16", "created_at(3i)"=>"22", "created_at(4i)"=>"16", "updated_at(5i)"=>"42", "created_at(5i)"=>"42", "areadescricao"=>"DIREITO"}, "controller"=>"areas"}
+  [4;35;1mArea Columns (0.015000)[0m   [0mSHOW FIELDS FROM areas[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas WHERE (areas.areadescricao = 'DIREITO') LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mINSERT INTO areas (`updated_at`, `areadescricao`, `created_at`) VALUES('2007-09-22 16:42:06', 'DIREITO', '2007-09-22 16:42:00')[0m
+  [4;35;1mSQL (0.047000)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/areas/list
+Completed in 0.09400 (10 reqs/sec) | DB: 0.06200 (65%) | 302 Found [http://localhost/areas/create]
+
+
+Processing AreasController#list (for 127.0.0.1 at 2007-09-22 16:42:06) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"list", "controller"=>"areas"}
+  [4;36;1mArea Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM areas [0m
+  [4;36;1mArea Load (0.015000)[0m   [0;1mSELECT * FROM areas LIMIT 0, 10[0m
+Rendering  within layouts/areas
+Rendering areas/list
+Completed in 0.12500 (8 reqs/sec) | Rendering: 0.09400 (75%) | DB: 0.01500 (12%) | 200 OK [http://localhost/areas/list]
+
+
+Processing AreasController#new (for 127.0.0.1 at 2007-09-22 16:42:08) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"new", "controller"=>"areas"}
+  [4;35;1mArea Columns (0.015000)[0m   [0mSHOW FIELDS FROM areas[0m
+Rendering  within layouts/areas
+Rendering areas/new
+Rendered areas/_form (0.00000)
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.03200 (41%) | DB: 0.01500 (19%) | 200 OK [http://localhost/areas/new]
+
+
+Processing AreasController#create (for 127.0.0.1 at 2007-09-22 16:42:16) [POST]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"commit"=>"Create", "action"=>"create", "area"=>{"updated_at(1i)"=>"2007", "updated_at(2i)"=>"9", "created_at(1i)"=>"2007", "updated_at(3i)"=>"22", "created_at(2i)"=>"9", "updated_at(4i)"=>"16", "created_at(3i)"=>"22", "created_at(4i)"=>"16", "updated_at(5i)"=>"42", "created_at(5i)"=>"42", "areadescricao"=>"ADMINISTRAÇÃO"}, "controller"=>"areas"}
+  [4;36;1mArea Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mArea Load (0.000000)[0m   [0;1mSELECT * FROM areas WHERE (areas.areadescricao = 'ADMINISTRAÇÃO') LIMIT 1[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO areas (`updated_at`, `areadescricao`, `created_at`) VALUES('2007-09-22 16:42:17', 'ADMINISTRAÇÃO', '2007-09-22 16:42:00')[0m
+  [4;36;1mSQL (0.140000)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/areas/list
+Completed in 0.20300 (4 reqs/sec) | DB: 0.15500 (76%) | 302 Found [http://localhost/areas/create]
+
+
+Processing AreasController#list (for 127.0.0.1 at 2007-09-22 16:42:17) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"list", "controller"=>"areas"}
+  [4;35;1mArea Columns (0.016000)[0m   [0mSHOW FIELDS FROM areas[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM areas [0m
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas LIMIT 0, 10[0m
+Rendering  within layouts/areas
+Rendering areas/list
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01600 (34%) | DB: 0.01600 (34%) | 200 OK [http://localhost/areas/list]
+
+
+Processing AreasController#new (for 127.0.0.1 at 2007-09-22 16:42:20) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"new", "controller"=>"areas"}
+  [4;36;1mArea Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+Rendering  within layouts/areas
+Rendering areas/new
+Rendered areas/_form (0.01500)
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01500 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/areas/new]
+
+
+Processing AreasController#create (for 127.0.0.1 at 2007-09-22 16:42:25) [POST]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"commit"=>"Create", "action"=>"create", "area"=>{"updated_at(1i)"=>"2007", "updated_at(2i)"=>"9", "created_at(1i)"=>"2007", "updated_at(3i)"=>"22", "created_at(2i)"=>"9", "updated_at(4i)"=>"16", "created_at(3i)"=>"22", "created_at(4i)"=>"16", "updated_at(5i)"=>"42", "created_at(5i)"=>"42", "areadescricao"=>"LETRAS"}, "controller"=>"areas"}
+  [4;35;1mArea Columns (0.016000)[0m   [0mSHOW FIELDS FROM areas[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas WHERE (areas.areadescricao = 'LETRAS') LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mINSERT INTO areas (`updated_at`, `areadescricao`, `created_at`) VALUES('2007-09-22 16:42:25', 'LETRAS', '2007-09-22 16:42:00')[0m
+  [4;35;1mSQL (0.047000)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/areas/list
+Completed in 0.07800 (12 reqs/sec) | DB: 0.06300 (80%) | 302 Found [http://localhost/areas/create]
+
+
+Processing AreasController#list (for 127.0.0.1 at 2007-09-22 16:42:25) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"list", "controller"=>"areas"}
+  [4;36;1mArea Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+  [4;35;1mSQL (0.016000)[0m   [0mSELECT count(*) AS count_all FROM areas [0m
+  [4;36;1mArea Load (0.000000)[0m   [0;1mSELECT * FROM areas LIMIT 0, 10[0m
+Rendering  within layouts/areas
+Rendering areas/list
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01600 (34%) | DB: 0.01600 (34%) | 200 OK [http://localhost/areas/list]
+
+
+Processing AreasController#new (for 127.0.0.1 at 2007-09-22 16:42:26) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"new", "controller"=>"areas"}
+  [4;35;1mArea Columns (0.000000)[0m   [0mSHOW FIELDS FROM areas[0m
+Rendering  within layouts/areas
+Rendering areas/new
+Rendered areas/_form (0.00000)
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/areas/new]
+
+
+Processing AreasController#create (for 127.0.0.1 at 2007-09-22 16:42:29) [POST]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"commit"=>"Create", "action"=>"create", "area"=>{"updated_at(1i)"=>"2007", "updated_at(2i)"=>"9", "created_at(1i)"=>"2007", "updated_at(3i)"=>"22", "created_at(2i)"=>"9", "updated_at(4i)"=>"16", "created_at(3i)"=>"22", "created_at(4i)"=>"16", "updated_at(5i)"=>"42", "created_at(5i)"=>"42", "areadescricao"=>"TURISMO"}, "controller"=>"areas"}
+  [4;36;1mArea Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mArea Load (0.000000)[0m   [0;1mSELECT * FROM areas WHERE (areas.areadescricao = 'TURISMO') LIMIT 1[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO areas (`updated_at`, `areadescricao`, `created_at`) VALUES('2007-09-22 16:42:30', 'TURISMO', '2007-09-22 16:42:00')[0m
+  [4;36;1mSQL (0.125000)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/areas/list
+Completed in 0.15700 (6 reqs/sec) | DB: 0.12500 (79%) | 302 Found [http://localhost/areas/create]
+
+
+Processing AreasController#list (for 127.0.0.1 at 2007-09-22 16:42:30) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"list", "controller"=>"areas"}
+  [4;35;1mArea Columns (0.000000)[0m   [0mSHOW FIELDS FROM areas[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM areas [0m
+  [4;35;1mArea Load (0.015000)[0m   [0mSELECT * FROM areas LIMIT 0, 10[0m
+Rendering  within layouts/areas
+Rendering areas/list
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01600 (34%) | DB: 0.01500 (31%) | 200 OK [http://localhost/areas/list]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2007-09-22 16:42:32) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"index", "controller"=>"documentos"}
+Rendering  within layouts/documentos
+Rendering documentos/index
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.01600 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing DocumentosController#swf (for 127.0.0.1 at 2007-09-22 16:42:35) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"swf", "controller"=>"documentos"}
+Redirected to http://localhost:3000/swf.html
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/documentos/swf]
+
+
+Processing DocumentosController#pesquisa (for 127.0.0.1 at 2007-09-22 16:42:36) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"documentos"}
+  [4;36;1mDocumento Columns (0.047000)[0m   [0;1mSHOW FIELDS FROM documentos[0m
+  [4;35;1mTipo Columns (0.000000)[0m   [0mSHOW FIELDS FROM tipos[0m
+  [4;36;1mArea Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+  [4;35;1mDocumento Load Including Associations (0.000000)[0m   [0mSELECT documentos.`id` AS t0_r0, documentos.`docdescricao` AS t0_r1, documentos.`docautor` AS t0_r2, documentos.`docpalavras_chave` AS t0_r3, documentos.`docsinopse` AS t0_r4, documentos.`docarquivo` AS t0_r5, documentos.`area_id` AS t0_r6, documentos.`tipo_id` AS t0_r7, documentos.`created_at` AS t0_r8, documentos.`updated_at` AS t0_r9, tipos.`id` AS t1_r0, tipos.`tipodescricao` AS t1_r1, tipos.`created_at` AS t1_r2, tipos.`updated_at` AS t1_r3, areas.`id` AS t2_r0, areas.`areadescricao` AS t2_r1, areas.`created_at` AS t2_r2, areas.`updated_at` AS t2_r3 FROM documentos LEFT OUTER JOIN tipos ON tipos.id = documentos.tipo_id LEFT OUTER JOIN areas ON areas.id = documentos.area_id ORDER BY documentos.created_at DESC LIMIT 0, 50[0m
+Completed in 0.14000 (7 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.06300 (44%) | 200 OK [http://localhost/documentos/pesquisa]
+
+
+Processing DocumentosController#pesquisaQtd (for 127.0.0.1 at 2007-09-22 16:42:36) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisaQtd", "controller"=>"documentos"}
+  [4;36;1mDocumento Load (0.015000)[0m   [0;1mSELECT * FROM documentos [0m
+Completed in 0.14000 (7 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (10%) | 200 OK [http://localhost/documentos/pesquisaQtd]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-09-22 16:42:57) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+  [4;36;1mArea Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-09-22 16:42:57) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos ORDER BY tipodescricao[0m
+  [4;36;1mTipo Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing DocumentosController#cadastra (for 127.0.0.1 at 2007-09-22 16:44:06) [POST]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"documento"=>{"docautor"=>"WELLINGTON", "docsinopse"=>"ESTE TRABALHO FOI ESCRITO POR......", "tipo_id"=>"1", "docpalavras_chave"=>"IA ", "area_id"=>"1", "docdescricao"=>"INTELIGÊNCIA ARTIFICIAL", "docarquivo"=>"apresentacao_julho_2007.zip"}, "action"=>"cadastra", "controller"=>"documentos"}
+  [4;35;1mDocumento Columns (0.109000)[0m   [0mSHOW FIELDS FROM documentos[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO documentos (`docautor`, `docsinopse`, `updated_at`, `area_id`, `docdescricao`, `docpalavras_chave`, `tipo_id`, `created_at`, `docarquivo`) VALUES('WELLINGTON', 'ESTE TRABALHO FOI ESCRITO POR......', '2007-09-22 16:44:07', 1, 'INTELIGÊNCIA ARTIFICIAL', 'IA ', 1, '2007-09-22 16:44:07', 'apresentacao_julho_2007.zip')[0m
+  [4;36;1mSQL (0.031000)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mDocumento Update (0.000000)[0m   [0;1mUPDATE documentos SET `created_at` = '2007-09-22 16:44:07', `docsinopse` = 'ESTE TRABALHO FOI ESCRITO POR......', `docarquivo` = 'apresentacao_julho_2007.zip', `tipo_id` = 1, `docpalavras_chave` = 'IA ', `docdescricao` = 'INTELIGÊNCIA ARTIFICIAL', `area_id` = 1, `updated_at` = '2007-09-22 16:44:07', `docautor` = 'WELLINGTON' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCOMMIT[0m
+Completed in 0.17200 (5 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.14000 (81%) | 200 OK [http://localhost/documentos/cadastra]
+
+
+Processing DocumentosController#upload (for 127.0.0.1 at 2007-09-22 16:44:11) [POST]
+  Session ID: 410ca94bad7ea9712b0db49b255803df
+  Parameters: {"Filename"=>"apresentacao_julho_2007.zip", "action"=>"upload", "Upload"=>"Submit Query", "controller"=>"documentos", "Filedata"=>#<File:C:/DOCUME~1/Jackson/CONFIG~1/Temp/CGI448.1>}
+Completed in 2.54700 (0 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/documentos/upload]
+
+
+Processing DocumentosController#pesquisa (for 127.0.0.1 at 2007-09-22 16:44:16) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"documentos"}
+  [4;36;1mDocumento Columns (0.031000)[0m   [0;1mSHOW FIELDS FROM documentos[0m
+  [4;35;1mTipo Columns (0.000000)[0m   [0mSHOW FIELDS FROM tipos[0m
+  [4;36;1mArea Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+  [4;35;1mDocumento Load Including Associations (0.000000)[0m   [0mSELECT documentos.`id` AS t0_r0, documentos.`docdescricao` AS t0_r1, documentos.`docautor` AS t0_r2, documentos.`docpalavras_chave` AS t0_r3, documentos.`docsinopse` AS t0_r4, documentos.`docarquivo` AS t0_r5, documentos.`area_id` AS t0_r6, documentos.`tipo_id` AS t0_r7, documentos.`created_at` AS t0_r8, documentos.`updated_at` AS t0_r9, tipos.`id` AS t1_r0, tipos.`tipodescricao` AS t1_r1, tipos.`created_at` AS t1_r2, tipos.`updated_at` AS t1_r3, areas.`id` AS t2_r0, areas.`areadescricao` AS t2_r1, areas.`created_at` AS t2_r2, areas.`updated_at` AS t2_r3 FROM documentos LEFT OUTER JOIN tipos ON tipos.id = documentos.tipo_id LEFT OUTER JOIN areas ON areas.id = documentos.area_id ORDER BY documentos.created_at DESC LIMIT 0, 50[0m
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.04700 (49%) | 200 OK [http://localhost/documentos/pesquisa]
+
+
+Processing DocumentosController#pesquisaQtd (for 127.0.0.1 at 2007-09-22 16:44:17) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisaQtd", "controller"=>"documentos"}
+  [4;36;1mDocumento Load (0.000000)[0m   [0;1mSELECT * FROM documentos [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/documentos/pesquisaQtd]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-09-22 16:44:38) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+  [4;36;1mArea Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (20%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-09-22 16:44:38) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos ORDER BY tipodescricao[0m
+  [4;36;1mTipo Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-09-22 16:44:44) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+  [4;36;1mArea Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (34%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-09-22 16:44:44) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos ORDER BY tipodescricao[0m
+  [4;36;1mTipo Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing DocumentosController#pesquisaArea (for 127.0.0.1 at 2007-09-22 16:44:50) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisaArea", "area_id"=>"3", "controller"=>"documentos"}
+  [4;35;1mDocumento Columns (0.015000)[0m   [0mSHOW FIELDS FROM documentos[0m
+  [4;36;1mTipo Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mArea Columns (0.016000)[0m   [0mSHOW FIELDS FROM areas[0m
+  [4;36;1mDocumento Load Including Associations (0.000000)[0m   [0;1mSELECT documentos.`id` AS t0_r0, documentos.`docdescricao` AS t0_r1, documentos.`docautor` AS t0_r2, documentos.`docpalavras_chave` AS t0_r3, documentos.`docsinopse` AS t0_r4, documentos.`docarquivo` AS t0_r5, documentos.`area_id` AS t0_r6, documentos.`tipo_id` AS t0_r7, documentos.`created_at` AS t0_r8, documentos.`updated_at` AS t0_r9, tipos.`id` AS t1_r0, tipos.`tipodescricao` AS t1_r1, tipos.`created_at` AS t1_r2, tipos.`updated_at` AS t1_r3, areas.`id` AS t2_r0, areas.`areadescricao` AS t2_r1, areas.`created_at` AS t2_r2, areas.`updated_at` AS t2_r3 FROM documentos LEFT OUTER JOIN tipos ON tipos.id = documentos.tipo_id LEFT OUTER JOIN areas ON areas.id = documentos.area_id WHERE (area_id = '3') ORDER BY docdescricao[0m
+Completed in 0.37500 (2 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03100 (8%) | 200 OK [http://localhost/documentos/pesquisaArea?area%5Fid=3]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-09-22 16:44:52) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos ORDER BY tipodescricao[0m
+  [4;36;1mTipo Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (51%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-09-22 16:44:53) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+  [4;36;1mArea Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (31%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing DocumentosController#pesquisaTipo (for 127.0.0.1 at 2007-09-22 16:44:56) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisaTipo", "tipo_id"=>"1", "controller"=>"documentos"}
+  [4;35;1mDocumento Columns (0.110000)[0m   [0mSHOW FIELDS FROM documentos[0m
+  [4;36;1mTipo Columns (0.047000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mArea Columns (0.015000)[0m   [0mSHOW FIELDS FROM areas[0m
+  [4;36;1mDocumento Load Including Associations (0.000000)[0m   [0;1mSELECT documentos.`id` AS t0_r0, documentos.`docdescricao` AS t0_r1, documentos.`docautor` AS t0_r2, documentos.`docpalavras_chave` AS t0_r3, documentos.`docsinopse` AS t0_r4, documentos.`docarquivo` AS t0_r5, documentos.`area_id` AS t0_r6, documentos.`tipo_id` AS t0_r7, documentos.`created_at` AS t0_r8, documentos.`updated_at` AS t0_r9, tipos.`id` AS t1_r0, tipos.`tipodescricao` AS t1_r1, tipos.`created_at` AS t1_r2, tipos.`updated_at` AS t1_r3, areas.`id` AS t2_r0, areas.`areadescricao` AS t2_r1, areas.`created_at` AS t2_r2, areas.`updated_at` AS t2_r3 FROM documentos LEFT OUTER JOIN tipos ON tipos.id = documentos.tipo_id LEFT OUTER JOIN areas ON areas.id = documentos.area_id WHERE (tipo_id = '1') ORDER BY docdescricao[0m
+Completed in 0.25000 (4 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.17200 (68%) | 200 OK [http://localhost/documentos/pesquisaTipo?tipo%5Fid=1]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-09-22 16:44:58) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+  [4;36;1mArea Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (17%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-09-22 16:44:59) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos ORDER BY tipodescricao[0m
+  [4;36;1mTipo Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01600 (34%) | DB: 0.01500 (31%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing DocumentosController#pesquisaAutor (for 127.0.0.1 at 2007-09-22 16:45:02) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"docautor"=>"WELL", "action"=>"pesquisaAutor", "controller"=>"documentos"}
+  [4;35;1mDocumento Columns (0.000000)[0m   [0mSHOW FIELDS FROM documentos[0m
+  [4;36;1mTipo Columns (0.047000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mArea Columns (0.109000)[0m   [0mSHOW FIELDS FROM areas[0m
+  [4;36;1mDocumento Load Including Associations (0.000000)[0m   [0;1mSELECT documentos.`id` AS t0_r0, documentos.`docdescricao` AS t0_r1, documentos.`docautor` AS t0_r2, documentos.`docpalavras_chave` AS t0_r3, documentos.`docsinopse` AS t0_r4, documentos.`docarquivo` AS t0_r5, documentos.`area_id` AS t0_r6, documentos.`tipo_id` AS t0_r7, documentos.`created_at` AS t0_r8, documentos.`updated_at` AS t0_r9, tipos.`id` AS t1_r0, tipos.`tipodescricao` AS t1_r1, tipos.`created_at` AS t1_r2, tipos.`updated_at` AS t1_r3, areas.`id` AS t2_r0, areas.`areadescricao` AS t2_r1, areas.`created_at` AS t2_r2, areas.`updated_at` AS t2_r3 FROM documentos LEFT OUTER JOIN tipos ON tipos.id = documentos.tipo_id LEFT OUTER JOIN areas ON areas.id = documentos.area_id WHERE (docautor like '%WELL%') ORDER BY docdescricao[0m
+Completed in 0.25000 (4 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.15600 (62%) | 200 OK [http://localhost/documentos/pesquisaAutor?docautor=WELL]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-09-22 16:45:15) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos ORDER BY tipodescricao[0m
+  [4;36;1mTipo Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+Completed in 0.04600 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (34%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-09-22 16:45:16) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+  [4;36;1mArea Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-09-22 16:45:20) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;35;1mTipo Load (0.015000)[0m   [0mSELECT * FROM tipos ORDER BY tipodescricao[0m
+  [4;36;1mTipo Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (23%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-09-22 16:45:20) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.016000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+  [4;36;1mArea Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (50%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-09-22 16:45:38) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+  [4;36;1mArea Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-09-22 16:45:39) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos ORDER BY tipodescricao[0m
+  [4;36;1mTipo Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2007-09-22 16:46:40) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"index", "controller"=>"documentos"}
+Rendering  within layouts/documentos
+Rendering documentos/index
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01600 (51%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing DocumentosController#tipos (for 127.0.0.1 at 2007-09-22 16:46:42) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"tipos", "controller"=>"documentos"}
+Redirected to http://localhost:3000/tipos
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/documentos/tipos]
+
+
+Processing TiposController#index (for 127.0.0.1 at 2007-09-22 16:46:42) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"index", "controller"=>"tipos"}
+  [4;35;1mTipo Columns (0.016000)[0m   [0mSHOW FIELDS FROM tipos[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM tipos [0m
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos LIMIT 0, 10[0m
+Rendering actionlistlayoutfalse within layouts/tipos
+Rendering tipos/list
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01600 (34%) | DB: 0.01600 (34%) | 200 OK [http://localhost/tipos]
+
+
+Processing DocumentosController#swf (for 127.0.0.1 at 2007-09-22 16:46:56) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"swf", "controller"=>"documentos"}
+Redirected to http://localhost:3000/swf.html
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/documentos/swf]
+
+
+Processing DocumentosController#pesquisa (for 127.0.0.1 at 2007-09-22 16:46:57) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisa", "controller"=>"documentos"}
+  [4;36;1mDocumento Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM documentos[0m
+  [4;35;1mTipo Columns (0.015000)[0m   [0mSHOW FIELDS FROM tipos[0m
+  [4;36;1mArea Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+  [4;35;1mDocumento Load Including Associations (0.016000)[0m   [0mSELECT documentos.`id` AS t0_r0, documentos.`docdescricao` AS t0_r1, documentos.`docautor` AS t0_r2, documentos.`docpalavras_chave` AS t0_r3, documentos.`docsinopse` AS t0_r4, documentos.`docarquivo` AS t0_r5, documentos.`area_id` AS t0_r6, documentos.`tipo_id` AS t0_r7, documentos.`created_at` AS t0_r8, documentos.`updated_at` AS t0_r9, tipos.`id` AS t1_r0, tipos.`tipodescricao` AS t1_r1, tipos.`created_at` AS t1_r2, tipos.`updated_at` AS t1_r3, areas.`id` AS t2_r0, areas.`areadescricao` AS t2_r1, areas.`created_at` AS t2_r2, areas.`updated_at` AS t2_r3 FROM documentos LEFT OUTER JOIN tipos ON tipos.id = documentos.tipo_id LEFT OUTER JOIN areas ON areas.id = documentos.area_id ORDER BY documentos.created_at DESC LIMIT 0, 50[0m
+Completed in 0.18700 (5 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.04700 (25%) | 200 OK [http://localhost/documentos/pesquisa]
+
+
+Processing DocumentosController#pesquisaQtd (for 127.0.0.1 at 2007-09-22 16:46:57) [GET]
+  Session ID: cf4d059ba38a2e9a53ca08607e9ea3a7
+  Parameters: {"action"=>"pesquisaQtd", "controller"=>"documentos"}
+  [4;36;1mDocumento Load (0.000000)[0m   [0;1mSELECT * FROM documentos [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/documentos/pesquisaQtd]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2007-12-11 22:59:32) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"index", "controller"=>"documentos"}
+Rendering  within layouts/documentos
+Rendering documentos/index
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.01500 (100%) | 200 OK [http://localhost/]
+
+
+Processing DocumentosController#swf (for 127.0.0.1 at 2007-12-11 22:59:40) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"swf", "controller"=>"documentos"}
+Redirected to http://localhost:3000/swf.html
+Completed in 0.00010 (10000 reqs/sec) | 302 Found [http://localhost/documentos/swf]
+
+
+Processing DocumentosController#pesquisa (for 127.0.0.1 at 2007-12-11 22:59:41) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"documentos"}
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mDocumento Columns (0.078000)[0m   [0;1mSHOW FIELDS FROM documentos[0m
+  [4;35;1mTipo Columns (0.047000)[0m   [0mSHOW FIELDS FROM tipos[0m
+  [4;36;1mArea Columns (0.032000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+  [4;35;1mDocumento Load Including Associations (0.000000)[0m   [0mSELECT documentos.`id` AS t0_r0, documentos.`docdescricao` AS t0_r1, documentos.`docautor` AS t0_r2, documentos.`docpalavras_chave` AS t0_r3, documentos.`docsinopse` AS t0_r4, documentos.`docarquivo` AS t0_r5, documentos.`area_id` AS t0_r6, documentos.`tipo_id` AS t0_r7, documentos.`created_at` AS t0_r8, documentos.`updated_at` AS t0_r9, tipos.`id` AS t1_r0, tipos.`tipodescricao` AS t1_r1, tipos.`created_at` AS t1_r2, tipos.`updated_at` AS t1_r3, areas.`id` AS t2_r0, areas.`areadescricao` AS t2_r1, areas.`created_at` AS t2_r2, areas.`updated_at` AS t2_r3 FROM documentos LEFT OUTER JOIN tipos ON tipos.id = documentos.tipo_id LEFT OUTER JOIN areas ON areas.id = documentos.area_id ORDER BY documentos.created_at DESC LIMIT 0, 50[0m
+Completed in 0.61000 (1 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.15700 (25%) | 200 OK [http://localhost/documentos/pesquisa]
+
+
+Processing DocumentosController#pesquisaQtd (for 127.0.0.1 at 2007-12-11 22:59:41) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisaQtd", "controller"=>"documentos"}
+  [4;36;1mDocumento Load (0.000000)[0m   [0;1mSELECT * FROM documentos [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/documentos/pesquisaQtd]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-12-11 22:59:44) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+  [4;36;1mArea Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-12-11 22:59:44) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos ORDER BY tipodescricao[0m
+  [4;36;1mTipo Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+Completed in 0.04600 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (32%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing DocumentosController#cadastra (for 127.0.0.1 at 2007-12-11 23:00:53) [POST]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"documento"=>{"docautor"=>"Daiany Macieira", "docsinopse"=>"monografia sobre endomarketing", "tipo_id"=>"1", "docpalavras_chave"=>"monografia documento endomarketing", "area_id"=>"5", "docdescricao"=>"Monografia de Dainany", "docarquivo"=>"dicas-seminarios.ppt"}, "action"=>"cadastra", "controller"=>"documentos"}
+  [4;35;1mDocumento Columns (0.000000)[0m   [0mSHOW FIELDS FROM documentos[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO documentos (`docautor`, `docsinopse`, `updated_at`, `area_id`, `docdescricao`, `docpalavras_chave`, `tipo_id`, `created_at`, `docarquivo`) VALUES('Daiany Macieira', 'monografia sobre endomarketing', '2007-12-11 23:00:53', 5, 'Monografia de Dainany', 'monografia documento endomarketing', 1, '2007-12-11 23:00:53', 'dicas-seminarios.ppt')[0m
+  [4;36;1mSQL (0.125000)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mDocumento Update (0.000000)[0m   [0;1mUPDATE documentos SET `created_at` = '2007-12-11 23:00:53', `docsinopse` = 'monografia sobre endomarketing', `docarquivo` = 'dicas-seminarios.ppt', `tipo_id` = 1, `docpalavras_chave` = 'monografia documento endomarketing', `docdescricao` = 'Monografia de Dainany', `area_id` = 5, `updated_at` = '2007-12-11 23:00:54', `docautor` = 'Daiany Macieira' WHERE `id` = 4[0m
+  [4;35;1mSQL (0.015000)[0m   [0mCOMMIT[0m
+Completed in 0.20300 (4 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.14000 (68%) | 200 OK [http://localhost/documentos/cadastra]
+
+
+Processing DocumentosController#upload (for 127.0.0.1 at 2007-12-11 23:00:54) [POST]
+  Session ID: af017209b5ed2986432d42bde2f1b069
+  Parameters: {"Filename"=>"dicas-seminarios.ppt", "action"=>"upload", "Upload"=>"Submit Query", "controller"=>"documentos", "Filedata"=>#<File:C:/DOCUME~1/Jackson/CONFIG~1/Temp/CGI2316.1>}
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/documentos/upload]
+
+
+Processing DocumentosController#pesquisa (for 127.0.0.1 at 2007-12-11 23:00:56) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"documentos"}
+  [4;36;1mDocumento Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM documentos[0m
+  [4;35;1mTipo Columns (0.000000)[0m   [0mSHOW FIELDS FROM tipos[0m
+  [4;36;1mArea Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+  [4;35;1mDocumento Load Including Associations (0.000000)[0m   [0mSELECT documentos.`id` AS t0_r0, documentos.`docdescricao` AS t0_r1, documentos.`docautor` AS t0_r2, documentos.`docpalavras_chave` AS t0_r3, documentos.`docsinopse` AS t0_r4, documentos.`docarquivo` AS t0_r5, documentos.`area_id` AS t0_r6, documentos.`tipo_id` AS t0_r7, documentos.`created_at` AS t0_r8, documentos.`updated_at` AS t0_r9, tipos.`id` AS t1_r0, tipos.`tipodescricao` AS t1_r1, tipos.`created_at` AS t1_r2, tipos.`updated_at` AS t1_r3, areas.`id` AS t2_r0, areas.`areadescricao` AS t2_r1, areas.`created_at` AS t2_r2, areas.`updated_at` AS t2_r3 FROM documentos LEFT OUTER JOIN tipos ON tipos.id = documentos.tipo_id LEFT OUTER JOIN areas ON areas.id = documentos.area_id ORDER BY documentos.created_at DESC LIMIT 0, 50[0m
+Completed in 0.18700 (5 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03100 (16%) | 200 OK [http://localhost/documentos/pesquisa]
+
+
+Processing DocumentosController#pesquisaQtd (for 127.0.0.1 at 2007-12-11 23:00:57) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisaQtd", "controller"=>"documentos"}
+  [4;36;1mDocumento Load (0.000000)[0m   [0;1mSELECT * FROM documentos [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/documentos/pesquisaQtd]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-12-11 23:01:07) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+  [4;36;1mArea Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+Completed in 0.06200 (16 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-12-11 23:01:07) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos ORDER BY tipodescricao[0m
+  [4;36;1mTipo Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing DocumentosController#pesquisaDescricao (for 127.0.0.1 at 2007-12-11 23:01:13) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisaDescricao", "docdescricao"=>"mon", "controller"=>"documentos"}
+  [4;35;1mDocumento Columns (0.000000)[0m   [0mSHOW FIELDS FROM documentos[0m
+  [4;36;1mTipo Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mArea Columns (0.015000)[0m   [0mSHOW FIELDS FROM areas[0m
+  [4;36;1mDocumento Load Including Associations (0.000000)[0m   [0;1mSELECT documentos.`id` AS t0_r0, documentos.`docdescricao` AS t0_r1, documentos.`docautor` AS t0_r2, documentos.`docpalavras_chave` AS t0_r3, documentos.`docsinopse` AS t0_r4, documentos.`docarquivo` AS t0_r5, documentos.`area_id` AS t0_r6, documentos.`tipo_id` AS t0_r7, documentos.`created_at` AS t0_r8, documentos.`updated_at` AS t0_r9, tipos.`id` AS t1_r0, tipos.`tipodescricao` AS t1_r1, tipos.`created_at` AS t1_r2, tipos.`updated_at` AS t1_r3, areas.`id` AS t2_r0, areas.`areadescricao` AS t2_r1, areas.`created_at` AS t2_r2, areas.`updated_at` AS t2_r3 FROM documentos LEFT OUTER JOIN tipos ON tipos.id = documentos.tipo_id LEFT OUTER JOIN areas ON areas.id = documentos.area_id WHERE (docdescricao like '%mon%') ORDER BY docdescricao[0m
+Completed in 0.09300 (10 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (16%) | 200 OK [http://localhost/documentos/pesquisaDescricao?docdescricao=mon]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-12-11 23:01:21) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;35;1mTipo Load (0.016000)[0m   [0mSELECT * FROM tipos ORDER BY tipodescricao[0m
+  [4;36;1mTipo Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (51%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-12-11 23:01:22) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+  [4;36;1mArea Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (31%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing DocumentosController#pesquisaDescricao (for 127.0.0.1 at 2007-12-11 23:01:24) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisaDescricao", "docdescricao"=>nil, "controller"=>"documentos"}
+
+
+TypeError (can't convert nil into String):
+    /app/controllers/documentos_controller.rb:99:in `+'
+    /app/controllers/documentos_controller.rb:99:in `pesquisaDescricao'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:113:in `handle_dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:79:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:63:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/webrick.rb:59
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-12-11 23:01:28) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+  [4;36;1mArea Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+Completed in 0.04600 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (34%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-12-11 23:01:28) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos ORDER BY tipodescricao[0m
+  [4;36;1mTipo Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (51%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing DocumentosController#pesquisaDescricao (for 127.0.0.1 at 2007-12-11 23:01:31) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisaDescricao", "docdescricao"=>"mono", "controller"=>"documentos"}
+  [4;35;1mDocumento Columns (0.016000)[0m   [0mSHOW FIELDS FROM documentos[0m
+  [4;36;1mTipo Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mArea Columns (0.016000)[0m   [0mSHOW FIELDS FROM areas[0m
+  [4;36;1mDocumento Load Including Associations (0.000000)[0m   [0;1mSELECT documentos.`id` AS t0_r0, documentos.`docdescricao` AS t0_r1, documentos.`docautor` AS t0_r2, documentos.`docpalavras_chave` AS t0_r3, documentos.`docsinopse` AS t0_r4, documentos.`docarquivo` AS t0_r5, documentos.`area_id` AS t0_r6, documentos.`tipo_id` AS t0_r7, documentos.`created_at` AS t0_r8, documentos.`updated_at` AS t0_r9, tipos.`id` AS t1_r0, tipos.`tipodescricao` AS t1_r1, tipos.`created_at` AS t1_r2, tipos.`updated_at` AS t1_r3, areas.`id` AS t2_r0, areas.`areadescricao` AS t2_r1, areas.`created_at` AS t2_r2, areas.`updated_at` AS t2_r3 FROM documentos LEFT OUTER JOIN tipos ON tipos.id = documentos.tipo_id LEFT OUTER JOIN areas ON areas.id = documentos.area_id WHERE (docdescricao like '%mono%') ORDER BY docdescricao[0m
+Completed in 0.34400 (2 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03200 (9%) | 200 OK [http://localhost/documentos/pesquisaDescricao?docdescricao=mono]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-12-11 23:01:35) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+  [4;36;1mArea Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01600 (34%) | DB: 0.01500 (31%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-12-11 23:01:35) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos ORDER BY tipodescricao[0m
+  [4;36;1mTipo Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+Completed in 0.17200 (5 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (9%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing DocumentosController#pesquisaArea (for 127.0.0.1 at 2007-12-11 23:01:40) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisaArea", "area_id"=>"5", "controller"=>"documentos"}
+  [4;35;1mDocumento Columns (0.015000)[0m   [0mSHOW FIELDS FROM documentos[0m
+  [4;36;1mTipo Columns (0.110000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mArea Columns (0.000000)[0m   [0mSHOW FIELDS FROM areas[0m
+  [4;36;1mDocumento Load Including Associations (0.015000)[0m   [0;1mSELECT documentos.`id` AS t0_r0, documentos.`docdescricao` AS t0_r1, documentos.`docautor` AS t0_r2, documentos.`docpalavras_chave` AS t0_r3, documentos.`docsinopse` AS t0_r4, documentos.`docarquivo` AS t0_r5, documentos.`area_id` AS t0_r6, documentos.`tipo_id` AS t0_r7, documentos.`created_at` AS t0_r8, documentos.`updated_at` AS t0_r9, tipos.`id` AS t1_r0, tipos.`tipodescricao` AS t1_r1, tipos.`created_at` AS t1_r2, tipos.`updated_at` AS t1_r3, areas.`id` AS t2_r0, areas.`areadescricao` AS t2_r1, areas.`created_at` AS t2_r2, areas.`updated_at` AS t2_r3 FROM documentos LEFT OUTER JOIN tipos ON tipos.id = documentos.tipo_id LEFT OUTER JOIN areas ON areas.id = documentos.area_id WHERE (area_id = '5') ORDER BY docdescricao[0m
+Completed in 0.23400 (4 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.14000 (59%) | 200 OK [http://localhost/documentos/pesquisaArea?area%5Fid=5]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-12-11 23:01:44) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;35;1mArea Load (0.000000)[0m   [0mSELECT * FROM areas ORDER BY areadescricao[0m
+  [4;36;1mArea Columns (0.094000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+Completed in 0.14100 (7 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.09400 (66%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-12-11 23:01:44) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos ORDER BY tipodescricao[0m
+  [4;36;1mTipo Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (51%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing DocumentosController#pesquisaArea (for 127.0.0.1 at 2007-12-11 23:01:46) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisaArea", "area_id"=>"1", "controller"=>"documentos"}
+  [4;35;1mDocumento Columns (0.000000)[0m   [0mSHOW FIELDS FROM documentos[0m
+  [4;36;1mTipo Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mArea Columns (0.016000)[0m   [0mSHOW FIELDS FROM areas[0m
+  [4;36;1mDocumento Load Including Associations (0.000000)[0m   [0;1mSELECT documentos.`id` AS t0_r0, documentos.`docdescricao` AS t0_r1, documentos.`docautor` AS t0_r2, documentos.`docpalavras_chave` AS t0_r3, documentos.`docsinopse` AS t0_r4, documentos.`docarquivo` AS t0_r5, documentos.`area_id` AS t0_r6, documentos.`tipo_id` AS t0_r7, documentos.`created_at` AS t0_r8, documentos.`updated_at` AS t0_r9, tipos.`id` AS t1_r0, tipos.`tipodescricao` AS t1_r1, tipos.`created_at` AS t1_r2, tipos.`updated_at` AS t1_r3, areas.`id` AS t2_r0, areas.`areadescricao` AS t2_r1, areas.`created_at` AS t2_r2, areas.`updated_at` AS t2_r3 FROM documentos LEFT OUTER JOIN tipos ON tipos.id = documentos.tipo_id LEFT OUTER JOIN areas ON areas.id = documentos.area_id WHERE (area_id = '1') ORDER BY docdescricao[0m
+Completed in 0.39100 (2 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03100 (7%) | 200 OK [http://localhost/documentos/pesquisaArea?area%5Fid=1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-12-11 23:01:59) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/upload/2/Monografia.zip" with {:method=>:get}):
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:113:in `handle_dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:79:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:63:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/webrick.rb:59
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2007-12-11 23:06:45) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"index", "controller"=>"documentos"}
+Rendering  within layouts/documentos
+Rendering documentos/index
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.01500 (100%) | 200 OK [http://localhost/]
+
+
+Processing DocumentosController#tipos (for 127.0.0.1 at 2007-12-11 23:06:49) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"tipos", "controller"=>"documentos"}
+Redirected to http://localhost:3000/tipos
+Completed in 0.00010 (10000 reqs/sec) | 302 Found [http://localhost/documentos/tipos]
+
+
+Processing TiposController#index (for 127.0.0.1 at 2007-12-11 23:06:49) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"index", "controller"=>"tipos"}
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTipo Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM tipos [0m
+  [4;36;1mTipo Load (0.015000)[0m   [0;1mSELECT * FROM tipos LIMIT 0, 10[0m
+Rendering actionlistlayoutfalse within layouts/tipos
+Rendering tipos/list
+Completed in 0.34400 (2 reqs/sec) | Rendering: 0.04700 (13%) | DB: 0.01500 (4%) | 200 OK [http://localhost/tipos]
+
+
+Processing TiposController#new (for 127.0.0.1 at 2007-12-11 23:06:56) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"new", "controller"=>"tipos"}
+  [4;35;1mTipo Columns (0.000000)[0m   [0mSHOW FIELDS FROM tipos[0m
+Rendering  within layouts/tipos
+Rendering tipos/new
+Rendered tipos/_form (0.01600)
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01600 (34%) | DB: 0.00000 (0%) | 200 OK [http://localhost/tipos/new]
+
+
+Processing TiposController#create (for 127.0.0.1 at 2007-12-11 23:07:00) [POST]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"tipos", "tipo"=>{"updated_at(1i)"=>"2007", "created_at(1i)"=>"2007", "updated_at(2i)"=>"12", "updated_at(3i)"=>"11", "created_at(2i)"=>"12", "updated_at(4i)"=>"23", "created_at(3i)"=>"11", "tipodescricao"=>"xxx", "created_at(4i)"=>"23", "updated_at(5i)"=>"06", "created_at(5i)"=>"06"}}
+  [4;36;1mTipo Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mTipo Load (0.000000)[0m   [0;1mSELECT * FROM tipos WHERE (tipos.tipodescricao = 'xxx') LIMIT 1[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO tipos (`updated_at`, `tipodescricao`, `created_at`) VALUES('2007-12-11 23:07:00', 'xxx', '2007-12-11 23:06:00')[0m
+  [4;36;1mSQL (0.047000)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/tipos/list
+Completed in 0.17200 (5 reqs/sec) | DB: 0.04700 (27%) | 302 Found [http://localhost/tipos/create]
+
+
+Processing TiposController#list (for 127.0.0.1 at 2007-12-11 23:07:00) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"list", "controller"=>"tipos"}
+  [4;35;1mTipo Columns (0.016000)[0m   [0mSHOW FIELDS FROM tipos[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM tipos [0m
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos LIMIT 0, 10[0m
+Rendering  within layouts/tipos
+Rendering tipos/list
+Completed in 0.04600 (21 reqs/sec) | Rendering: 0.01500 (32%) | DB: 0.01600 (34%) | 200 OK [http://localhost/tipos/list]
+
+
+Processing TiposController#destroy (for 127.0.0.1 at 2007-12-11 23:07:03) [POST]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"destroy", "id"=>"4", "controller"=>"tipos"}
+  [4;36;1mTipo Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos WHERE (tipos.`id` = 4) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mTipo Destroy (0.000000)[0m   [0m DELETE FROM tipos
+ WHERE `id` = 4
+[0m
+  [4;36;1mSQL (0.078000)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/tipos/list
+Completed in 0.10900 (9 reqs/sec) | DB: 0.09300 (85%) | 302 Found [http://localhost/tipos/destroy/4]
+
+
+Processing TiposController#list (for 127.0.0.1 at 2007-12-11 23:07:04) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"list", "controller"=>"tipos"}
+  [4;35;1mTipo Columns (0.016000)[0m   [0mSHOW FIELDS FROM tipos[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM tipos [0m
+  [4;35;1mTipo Load (0.000000)[0m   [0mSELECT * FROM tipos LIMIT 0, 10[0m
+Rendering  within layouts/tipos
+Rendering tipos/list
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01500 (48%) | DB: 0.01600 (51%) | 200 OK [http://localhost/tipos/list]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2007-12-11 23:07:17) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"index", "controller"=>"documentos"}
+Rendering  within layouts/documentos
+Rendering documentos/index
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.01600 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing DocumentosController#areas (for 127.0.0.1 at 2007-12-11 23:07:19) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"areas", "controller"=>"documentos"}
+Redirected to http://localhost:3000/areas
+Completed in 0.03100 (32 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/documentos/areas]
+
+
+Processing AreasController#index (for 127.0.0.1 at 2007-12-11 23:07:19) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"index", "controller"=>"areas"}
+  [4;36;1mArea Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM areas[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM areas [0m
+  [4;36;1mArea Load (0.000000)[0m   [0;1mSELECT * FROM areas LIMIT 0, 10[0m
+Rendering actionlistlayoutfalse within layouts/areas
+Rendering areas/list
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.03100 (65%) | DB: 0.01600 (34%) | 200 OK [http://localhost/areas]
+
+
+Processing DocumentosController#swf (for 127.0.0.1 at 2007-12-11 23:07:30) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"swf", "controller"=>"documentos"}
+Redirected to http://localhost:3000/swf.html
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/documentos/swf]
+
+
+Processing DocumentosController#pesquisa (for 127.0.0.1 at 2007-12-11 23:07:31) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"documentos"}
+  [4;35;1mDocumento Columns (0.000000)[0m   [0mSHOW FIELDS FROM documentos[0m
+  [4;36;1mTipo Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mArea Columns (0.000000)[0m   [0mSHOW FIELDS FROM areas[0m
+  [4;36;1mDocumento Load Including Associations (0.000000)[0m   [0;1mSELECT documentos.`id` AS t0_r0, documentos.`docdescricao` AS t0_r1, documentos.`docautor` AS t0_r2, documentos.`docpalavras_chave` AS t0_r3, documentos.`docsinopse` AS t0_r4, documentos.`docarquivo` AS t0_r5, documentos.`area_id` AS t0_r6, documentos.`tipo_id` AS t0_r7, documentos.`created_at` AS t0_r8, documentos.`updated_at` AS t0_r9, tipos.`id` AS t1_r0, tipos.`tipodescricao` AS t1_r1, tipos.`created_at` AS t1_r2, tipos.`updated_at` AS t1_r3, areas.`id` AS t2_r0, areas.`areadescricao` AS t2_r1, areas.`created_at` AS t2_r2, areas.`updated_at` AS t2_r3 FROM documentos LEFT OUTER JOIN tipos ON tipos.id = documentos.tipo_id LEFT OUTER JOIN areas ON areas.id = documentos.area_id ORDER BY documentos.created_at DESC LIMIT 0, 50[0m
+Completed in 0.15600 (6 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (10%) | 200 OK [http://localhost/documentos/pesquisa]
+
+
+Processing DocumentosController#pesquisaQtd (for 127.0.0.1 at 2007-12-11 23:07:31) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisaQtd", "controller"=>"documentos"}
+  [4;35;1mDocumento Load (0.000000)[0m   [0mSELECT * FROM documentos [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/documentos/pesquisaQtd]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-12-11 23:07:35) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;36;1mArea Load (0.000000)[0m   [0;1mSELECT * FROM areas ORDER BY areadescricao[0m
+  [4;35;1mArea Columns (0.000000)[0m   [0mSHOW FIELDS FROM areas[0m
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-12-11 23:07:35) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;36;1mTipo Load (0.000000)[0m   [0;1mSELECT * FROM tipos ORDER BY tipodescricao[0m
+  [4;35;1mTipo Columns (0.016000)[0m   [0mSHOW FIELDS FROM tipos[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (34%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing DocumentosController#cadastra (for 127.0.0.1 at 2007-12-11 23:08:34) [POST]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"documento"=>{"docautor"=>"Daiany Pires", "docsinopse"=>"monografia falando sobre endomarketing", "tipo_id"=>"1", "docpalavras_chave"=>"endomarketing marketing empresa", "area_id"=>"5", "docdescricao"=>"Endomarketing na Empresa", "docarquivo"=>"dicas-seminarios.ppt"}, "action"=>"cadastra", "controller"=>"documentos"}
+  [4;36;1mDocumento Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM documentos[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mINSERT INTO documentos (`docautor`, `docsinopse`, `updated_at`, `area_id`, `docdescricao`, `docpalavras_chave`, `tipo_id`, `created_at`, `docarquivo`) VALUES('Daiany Pires', 'monografia falando sobre endomarketing', '2007-12-11 23:08:34', 5, 'Endomarketing na Empresa', 'endomarketing marketing empresa', 1, '2007-12-11 23:08:34', 'dicas-seminarios.ppt')[0m
+  [4;35;1mSQL (0.140000)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mDocumento Update (0.000000)[0m   [0mUPDATE documentos SET `created_at` = '2007-12-11 23:08:34', `docsinopse` = 'monografia falando sobre endomarketing', `docarquivo` = 'dicas-seminarios.ppt', `tipo_id` = 1, `docpalavras_chave` = 'endomarketing marketing empresa', `docdescricao` = 'Endomarketing na Empresa', `area_id` = 5, `updated_at` = '2007-12-11 23:08:34', `docautor` = 'Daiany Pires' WHERE `id` = 5[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mCOMMIT[0m
+Completed in 0.18700 (5 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.15600 (83%) | 200 OK [http://localhost/documentos/cadastra]
+
+
+Processing DocumentosController#upload (for 127.0.0.1 at 2007-12-11 23:08:35) [POST]
+  Session ID: af017209b5ed2986432d42bde2f1b069
+  Parameters: {"Filename"=>"dicas-seminarios.ppt", "action"=>"upload", "Upload"=>"Submit Query", "controller"=>"documentos", "Filedata"=>#<File:C:/DOCUME~1/Jackson/CONFIG~1/Temp/CGI3308.1>}
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/documentos/upload]
+
+
+Processing DocumentosController#pesquisa (for 127.0.0.1 at 2007-12-11 23:08:36) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"documentos"}
+  [4;35;1mDocumento Columns (0.016000)[0m   [0mSHOW FIELDS FROM documentos[0m
+  [4;36;1mTipo Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mArea Columns (0.000000)[0m   [0mSHOW FIELDS FROM areas[0m
+  [4;36;1mDocumento Load Including Associations (0.015000)[0m   [0;1mSELECT documentos.`id` AS t0_r0, documentos.`docdescricao` AS t0_r1, documentos.`docautor` AS t0_r2, documentos.`docpalavras_chave` AS t0_r3, documentos.`docsinopse` AS t0_r4, documentos.`docarquivo` AS t0_r5, documentos.`area_id` AS t0_r6, documentos.`tipo_id` AS t0_r7, documentos.`created_at` AS t0_r8, documentos.`updated_at` AS t0_r9, tipos.`id` AS t1_r0, tipos.`tipodescricao` AS t1_r1, tipos.`created_at` AS t1_r2, tipos.`updated_at` AS t1_r3, areas.`id` AS t2_r0, areas.`areadescricao` AS t2_r1, areas.`created_at` AS t2_r2, areas.`updated_at` AS t2_r3 FROM documentos LEFT OUTER JOIN tipos ON tipos.id = documentos.tipo_id LEFT OUTER JOIN areas ON areas.id = documentos.area_id ORDER BY documentos.created_at DESC LIMIT 0, 50[0m
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.04700 (50%) | 200 OK [http://localhost/documentos/pesquisa]
+
+
+Processing DocumentosController#pesquisaQtd (for 127.0.0.1 at 2007-12-11 23:08:36) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisaQtd", "controller"=>"documentos"}
+  [4;35;1mDocumento Load (0.016000)[0m   [0mSELECT * FROM documentos [0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (50%) | 200 OK [http://localhost/documentos/pesquisaQtd]
+
+
+Processing AreasController#pesquisa (for 127.0.0.1 at 2007-12-11 23:08:39) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"areas"}
+  [4;36;1mArea Load (0.000000)[0m   [0;1mSELECT * FROM areas ORDER BY areadescricao[0m
+  [4;35;1mArea Columns (0.015000)[0m   [0mSHOW FIELDS FROM areas[0m
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (23%) | 200 OK [http://localhost/areas/pesquisa]
+
+
+Processing TiposController#pesquisa (for 127.0.0.1 at 2007-12-11 23:08:39) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"tipos"}
+  [4;36;1mTipo Load (0.000000)[0m   [0;1mSELECT * FROM tipos ORDER BY tipodescricao[0m
+  [4;35;1mTipo Columns (0.015000)[0m   [0mSHOW FIELDS FROM tipos[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (31%) | 200 OK [http://localhost/tipos/pesquisa]
+
+
+Processing DocumentosController#cadastra (for 127.0.0.1 at 2007-12-11 23:09:49) [POST]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"documento"=>{"docautor"=>"Jackson Pires", "docsinopse"=>"Monografia sobre o desenvolvimento de aplicações RoR + Flex", "tipo_id"=>"1", "docpalavras_chave"=>"Ruby Rails RoR Flex Adobe", "area_id"=>"1", "docdescricao"=>"Integrando Frameworks com RoR e Flex", "docarquivo"=>"Jack_Apresentacao.ppt"}, "action"=>"cadastra", "controller"=>"documentos"}
+  [4;36;1mDocumento Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM documentos[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mINSERT INTO documentos (`docautor`, `docsinopse`, `updated_at`, `area_id`, `docdescricao`, `docpalavras_chave`, `tipo_id`, `created_at`, `docarquivo`) VALUES('Jackson Pires', 'Monografia sobre o desenvolvimento de aplicações RoR + Flex', '2007-12-11 23:09:49', 1, 'Integrando Frameworks com RoR e Flex', 'Ruby Rails RoR Flex Adobe', 1, '2007-12-11 23:09:49', 'Jack_Apresentacao.ppt')[0m
+  [4;35;1mSQL (0.141000)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mDocumento Update (0.000000)[0m   [0mUPDATE documentos SET `created_at` = '2007-12-11 23:09:49', `docsinopse` = 'Monografia sobre o desenvolvimento de aplicações RoR + Flex', `docarquivo` = 'Jack_Apresentacao.ppt', `tipo_id` = 1, `docpalavras_chave` = 'Ruby Rails RoR Flex Adobe', `docdescricao` = 'Integrando Frameworks com RoR e Flex', `area_id` = 1, `updated_at` = '2007-12-11 23:09:49', `docautor` = 'Jackson Pires' WHERE `id` = 6[0m
+  [4;36;1mSQL (0.015000)[0m   [0;1mCOMMIT[0m
+Completed in 0.18700 (5 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.17100 (91%) | 200 OK [http://localhost/documentos/cadastra]
+
+
+Processing DocumentosController#upload (for 127.0.0.1 at 2007-12-11 23:09:50) [POST]
+  Session ID: af017209b5ed2986432d42bde2f1b069
+  Parameters: {"Filename"=>"Jack_Apresentacao.ppt", "action"=>"upload", "Upload"=>"Submit Query", "controller"=>"documentos", "Filedata"=>#<File:C:/DOCUME~1/Jackson/CONFIG~1/Temp/CGI3308.1>}
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/documentos/upload]
+
+
+Processing DocumentosController#pesquisa (for 127.0.0.1 at 2007-12-11 23:09:52) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisa", "controller"=>"documentos"}
+  [4;35;1mDocumento Columns (0.016000)[0m   [0mSHOW FIELDS FROM documentos[0m
+  [4;36;1mTipo Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM tipos[0m
+  [4;35;1mArea Columns (0.015000)[0m   [0mSHOW FIELDS FROM areas[0m
+  [4;36;1mDocumento Load Including Associations (0.016000)[0m   [0;1mSELECT documentos.`id` AS t0_r0, documentos.`docdescricao` AS t0_r1, documentos.`docautor` AS t0_r2, documentos.`docpalavras_chave` AS t0_r3, documentos.`docsinopse` AS t0_r4, documentos.`docarquivo` AS t0_r5, documentos.`area_id` AS t0_r6, documentos.`tipo_id` AS t0_r7, documentos.`created_at` AS t0_r8, documentos.`updated_at` AS t0_r9, tipos.`id` AS t1_r0, tipos.`tipodescricao` AS t1_r1, tipos.`created_at` AS t1_r2, tipos.`updated_at` AS t1_r3, areas.`id` AS t2_r0, areas.`areadescricao` AS t2_r1, areas.`created_at` AS t2_r2, areas.`updated_at` AS t2_r3 FROM documentos LEFT OUTER JOIN tipos ON tipos.id = documentos.tipo_id LEFT OUTER JOIN areas ON areas.id = documentos.area_id ORDER BY documentos.created_at DESC LIMIT 0, 50[0m
+Completed in 0.20300 (4 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.04700 (23%) | 200 OK [http://localhost/documentos/pesquisa]
+
+
+Processing DocumentosController#pesquisaQtd (for 127.0.0.1 at 2007-12-11 23:09:52) [GET]
+  Session ID: 5ab38ffb8464f5d5fb62ee4ca9e81c81
+  Parameters: {"action"=>"pesquisaQtd", "controller"=>"documentos"}
+  [4;35;1mDocumento Load (0.000000)[0m   [0mSELECT * FROM documentos [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/documentos/pesquisaQtd]
+
+
+Processing InfoController#properties (for 127.0.0.1 at 2007-12-13 19:49:59) [GET]
+  Session ID: 55ecc2975326c6c09c86fcedade0a64d
+  Parameters: {"action"=>"properties", "controller"=>"rails/info"}
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.110000)[0m   [0;1mSELECT version FROM schema_info[0m
+Completed in 0.65700 (1 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.11000 (16%) | 200 OK [http://localhost/rails/info/properties]

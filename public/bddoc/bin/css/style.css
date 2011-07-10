@@ -1,0 +1,25 @@
+/* CSS file */
+Button {
+   paddingLeft: 7;
+   fontSize: 14;
+   fontWeight: bold;
+}
+
+TextInput {
+   borderStyle: solid;
+   borderColor: #666666;
+}
+
+ComboBox {
+   cornerRadius: 0;
+}
+
+TextArea {
+   borderColor: #666666;
+}
+
+.arrowButton {
+   paddingLeft: 6;
+   fillAlphas: 0, 0, 0, 0;
+   borderColor: #ffffff;
+}

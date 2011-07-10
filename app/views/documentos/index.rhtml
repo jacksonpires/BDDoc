@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>BDDOC - Banco de Dados de Documentos</title>
+  <%= stylesheet_link_tag "default" %>
+  <%= stylesheet_link_tag "scaffold" %>
+</head>
+
+<body>
+  <h1>BDDOC</h1>
+  <ul id="menu">
+    <li><%=  link_to "Documentos", { :action => "swf" }, :title=>"Cadastrar novo documento..." %></li>
+    <li><%=  link_to "Tipos", { :action => "tipos" }, :title=>"Cadastrar novo tipo de documento..." %></li>
+    <li><%=  link_to "Áreas", { :action => "areas" }, :title=>"Cadastrar nova área de documento..." %></li>
+  </ul>
+</body>
+
+</html>

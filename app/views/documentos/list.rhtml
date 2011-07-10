@@ -1,0 +1,27 @@
+<h1>Listing documentos</h1>
+
+<table>
+  <tr>
+  <% for column in Documento.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for documento in @documentos %>
+  <tr>
+  <% for column in Documento.content_columns %>
+    <td><%=h documento.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => documento %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => documento %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => documento }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @documento_pages.current.previous } if @documento_pages.current.previous %>
+<%= link_to 'Next page', { :page => @documento_pages.current.next } if @documento_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New documento', :action => 'new' %>

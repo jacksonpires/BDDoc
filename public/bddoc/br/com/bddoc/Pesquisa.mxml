@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+	layout="absolute" width="600" height="304" 
+	horizontalAlign="center" verticalAlign="middle"  
+	showCloseButton="true" 
+	creationComplete="init()"				
+	close="{close()}"
+	title="Pesquisa de documentos" fontSize="12" borderAlpha="1"
+	 creationCompleteEffect="{effectShow}">
+ 
+	<mx:Style source="/css/style.css"/>	
+
+	<mx:Script source="utils/Pesquisa.as"/>
+
+    <mx:Parallel id="effectShow">
+            <mx:Move id="myMove" xFrom="0" target="{this}"/>
+            <mx:Blur id="blurEffect"  blurXFrom="100" blurXTo="0" blurYFrom="100" blurYTo="0" duration="500"/>
+            <mx:Zoom id="myZoomShow" 
+                zoomHeightFrom="0" zoomWidthFrom="0" 
+                zoomHeightTo="1.0" zoomWidthTo="1.0"/>
+    </mx:Parallel>
+
+    <mx:Parallel id="effectClose" effectEnd="{theEnd()}">
+            <mx:Move id="myMove1" xTo="0" yTo="0" target="{this}" />
+            <mx:Blur id="blurEffect1"  blurXFrom="0" blurXTo="100" blurYFrom="0" blurYTo="100"  duration="500" target="{this}"/>
+            <mx:Zoom id="myZoomShow1"  target="{this}" 
+                zoomHeightFrom="1.0" zoomWidthFrom="1.0" 
+                zoomHeightTo="0" zoomWidthTo="0"/>
+    </mx:Parallel>
+
+	<mx:RadioButtonGroup id="radiogroup1"/>
+	<mx:RadioButton x="10" y="51" label="Descrição" groupName="radiogroup1" id="_radio_descricao" value="1"/>
+	<mx:RadioButton x="10" y="75" label="Autor" groupName="radiogroup1" id="_radio_autor" value="2"/>
+	<mx:RadioButton x="10" y="99" label="Palavra-Chave" groupName="radiogroup1" id="_radio_palavra" value="3"/>
+	<mx:RadioButton x="10" y="148" label="Área" groupName="radiogroup1" id="_radio_area" value="4"/>
+	<mx:RadioButton x="10" y="175" label="Tipo" groupName="radiogroup1" id="_radio_tipo" value="5"/>
+	<mx:TextInput id="_txt_descricao" x="147" y="52" width="423" click="radiogroup1.selectedValue='1'" toolTip="digite algo relativo à descrição"/>
+	<mx:TextInput id="_txt_autor" x="147" y="76" width="423" click="radiogroup1.selectedValue='2'"/>
+	<mx:TextInput id="_txt_palavra" x="147" y="100" width="423" click="radiogroup1.selectedValue='3'"/>
+	<mx:ComboBox x="147" y="148" id="_cmb_Area" click="radiogroup1.selectedValue='4'" dataProvider="{pesquisaAreaService.lastResult.areas.area}" labelField="areadescricao" ></mx:ComboBox>
+	<mx:ComboBox x="147" y="175" id="_cmb_Tipo" click="radiogroup1.selectedValue='5'" dataProvider="{pesquisaTipoService.lastResult.tipos.tipo}" labelField="tipodescricao" ></mx:ComboBox>
+	<mx:Label x="156.5" y="10" text="Selecione um tipo de pesquisa" fontWeight="bold" textAlign="center" fontSize="16"/>
+
+	<mx:ControlBar height="53" x="0" y="317">
+		<mx:Spacer width="100%"/>
+		<mx:Button id="_btn_pesquisar" label="Pesquisar" icon="@Embed(source='/assets/search.png')" tabIndex="8" click="pesquisar()" />
+		<mx:Button id="_btn_cancelar" label="Cancelar" icon="@Embed(source='/assets/cancel.png')" tabIndex="9" click="{close()}"/>
+	</mx:ControlBar>	
+	
+</mx:TitleWindow>
